@@ -13,3 +13,6 @@
   </ul>
 
 <h1>Acknowledgements</h1>
+  <ul>
+    <li>Icon: <a href="https://devicon.dev/" target="_blank">DEVICON</a> and <a href="https://fontawesome.com/" target="_blank">Font Awesome</a></li>
+  </ul>
