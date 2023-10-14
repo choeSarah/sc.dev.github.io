@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Choe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="logo">sc.dev</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="#home" class="active" data-section="home">Home</a>
+                </li>
+                <li>
+                    <a href="#projects" data-section="home">Projects</a>
+                </li>
+                <li>
+                    <a href="#skills" data-section="home">Skills</a>
+                </li>
+                <li>
+                    <a href="#about" data-section="home">About</a>
+                </li>
+                <li>
+                    <a href="#contact" data-section="home">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+
+    <section class="home_header" id="home">
+        <div class="home_header_title">Hi!<br>I'm Sarah Choe</div>
+        <div class="home_header_desc">I <span class="desc_words1">code</span>, <span class="desc_words2">design</span>, and <span class="desc_words3">problem-solve.</span></div>
+
+        <div class="home_header_buttons">
+            <button>GitHub</button>
+            <button><a href="https://www.linkedin.com/in/sarah-choe-4974a723a/" target="_blank">LinkedIn</a></button>
+            <button>Design Portfolio</button>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="projects_header" id="projects_header"></div>
+
+        <div class="project_case">
+            <div class="project_case_left">
+                <div class="project_case_title">Microsoft Excel Clone</div>
+                <div class="project_case_tools">
+                    <i class="devicon-csharp-plain colored"></i>
+                    <i class="devicon-visualstudio-plain colored"></i>
+                    <i class="devicon-git-plain colored"></i>
+                    <img src="./maui_icon.png" class="maui_icon">
+                  </div>
+                <div class="project_case_desc">
+                    This project is a C# and MAUI-based spreadsheet application developed to mimic the core functionality and user experience of Microsoft Excel. 
+                    It showcases my skills in both front-end and back-end development as well as my understanding of complex data structure and algorithms.
+                </div>
+                <div class="project_case_challenges">
+                </div>
+
+                <div class="project_case_buttons">
+                    <button id="in_progress">In Progress</button>
+                    <button>GitHub</button>
+                </div>
+            </div>
+            <div class="project_case_right">
+                <div class="project_case_img">
+                    <img src="./excel_clone_cover.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="project_case">
+            <div class="project_case_left">
+                <div class="project_case_title">Product Price Tracker</div>
+                <div class="project_case_tools">
+                    <i class="devicon-csharp-plain colored"></i>
+                    <i class="devicon-visualstudio-plain colored"></i>
+                    <i class="devicon-git-plain colored"></i>
+                    <img src="./maui_icon.png" class="maui_icon">
+                  </div>
+                <div class="project_case_desc">
+                    This project is a C# and MAUI-based spreadsheet application developed to mimic the core functionality and user experience of Microsoft Excel. 
+                    It showcases my skills in both front-end and back-end development as well as my understanding of complex data structure and algorithms.
+                </div>
+                <div class="project_case_challenges">
+                </div>
+
+                <div class="project_case_buttons">
+                    <button id="in_progress">In Progress</button>
+                    <button>GitHub</button>
+                </div>
+            </div>
+            <div class="project_case_right">
+                <div class="project_case_img">
+                    <img>
+                </div>
+            </div>
+        </div>
+
+        <div class="project_case">
+            <div class="project_case_left">
+                <div class="project_case_title">Personal Website</div>
+                <div class="project_case_tools">
+                    <i class="devicon-html5-plain-wordmark colored"></i>
+                    <i class="devicon-css3-plain-wordmark colored"></i>
+                    <i class="devicon-javascript-plain colored"></i>
+                </div>
+                <div class="project_case_desc">
+                    You're looking at this project right now! This project HTML, CSS, and Javascript-based website developed to showcase
+                    my coding skills and projects. 
+                </div>
+                <div class="project_case_challenges">
+                </div>
+
+                <div class="project_case_buttons">
+                    <button id="done">Done</button>
+                    <button>GitHub</button>
+                </div>
+            </div>
+            <div class="project_case_right">
+                <div class="project_case_img">
+                    <img>
+                </div>
+            </div>
+        </div>
+
+        <div class="project_case" id="breadth-first">
+            <div class="project_case_left">
+                <div class="project_case_title">Wordle Clone</div>
+                <div class="project_case_tools">
+                    <i class="devicon-java-plain colored"></i>
+                    <i class="devicon-intellij-plain colored"></i>
+                </div>
+                <div class="project_case_desc">
+                    The Wordle Clone project is a text-based, command-line version of the popular word-guessing game Wordle. 
+                    Through this project, I mastered programming logic, data structures, and user interaction in a console environment.
+                </div>
+                
+                <div class="project_case_challenges">
+                    One challenge encountered was handling proper user input and output. ELEPHANT;
+                </div>
+                <div class="project_case_buttons">
+                    <button id="demo">Demo     <i class="fa-solid fa-play"></i></button>
+                    <button>GitHub</button>
+                </div>
+            </div>
+
+
+            <div class="project_case_right">
+                <div class="project_case_img">
+                    <img>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="skills_languages">
+            <div class="skills_desc">Coding Languages</div>
+            <div class="skills_icons">
+                <i class="devicon-csharp-plain colored"></i>
+                <i class="devicon-html5-plain-wordmark colored"></i>
+                <i class="devicon-css3-plain-wordmark colored"></i>
+                <i class="devicon-python-plain-wordmark colored"></i>
+                <i class="devicon-pandas-original-wordmark colored"></i>
+                <i class="devicon-java-plain-wordmark colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+                <img src="./maui_icon.png" class="maui_icon">
+
+            </div>
+        </div>
+
+        <div class="skills_programs">
+            <div class="skills_desc">IDEs and Software Tools</div>
+            <div class="skills_icons">
+                <i class="devicon-visualstudio-plain-wordmark colored"></i>
+                <i class="devicon-vscode-plain-wordmark colored"></i>
+                <i class="devicon-intellij-plain-wordmark colored"></i>
+                <i class="devicon-git-plain-wordmark colored"></i>
+                <i class="devicon-jupyter-plain-wordmark colored"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about_header" id="about_header">who am I?</div>
+        <div class="about_subheader">
+            <div class="first"><div>Programmer</div></div>
+            <div class="second"><div>Designer</div></div>
+            <div class="third"><div>Problem Solver</div></div>
+
+        </div>
+        <div class="about_container">
+            <div class="about_left">
+                <div class="about_desc">
+                    I'm Sarah Choe, a computer science student with a passion for problem-solving and designing for ELEPHANT. 
+                    Currently pursuing a Bachelor's degree in Computer Science, I've gained a strong foundation in programming,
+                    data structures, and algorithms. Furthermore, I'm also minoring in Design and Psychology; combined with my
+                    technological skills, I thrive on tackling challenging projects and problem-solving not only from a logistical 
+                    perspective, but also from a human-centered and impact-focused perspective.
+                </div>
+                <img src="./vennDiagram.png">
+            </div>
+    
+            <div class="about-right">
+                <div class="timeline">
+                    <div class="outer">
+                      <div class="card" id="card1">
+                        <div class="info">
+                          <h3 class="title">Undergraduate Research Assistant</h3>
+                          <h5>Jan 2023 - Present</h5>
+                          <h5>@University of Utah's School of Computing </h5>
+
+                          <ul>
+                            <li>Co-authored a paper, “#WakeUpWorldRussiaInvadedUkraine: Exploration of External-Facing Communications in Ukraine in 2014”, 
+                                for the 2024 CHI Conference.
+                            </li>
+                            <li>Presented new findings and insights at weekly team meetings to contribute to the project's decision-making process.</li>
+                            <li>Conducted qualitative and quantitative analysis on more than 6 million tweets using Python and Pandas to find trends across the data set
+                            </li>
+                        </ul>
+                        </div>
+                      </div>
+
+                      <div class="card" id="card2">
+                            <div class="info">
+                            <h3 class="title">Instructor</h3>
+                            <h5>Jun 2021 - Present</h5>
+                            <h5>@Mathnasium</h5>
+                            <ul>
+                                <li>
+                                    Tutored up to 4 students per session who were in elementary school to high school and maintained a 
+                                    positive atmosphere through encouragement and reinforcement. 
+                                </li>
+                                <li>
+                                    Critiqued teaching techniques in monthly faculty meetings and determined specific student needs.
+                                </li>
+                            </ul>
+                            </div>
+                      </div>              
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-left">
+                <div class="contact-left-title">Let's work together!</div>
+                <div class="contact-left-subtitle">Or just say hello :)</div>
+
+            </div>
+
+            <div class="contact-right">
+                <div class="contact-right-c1">
+                    <div class="contact-right-r1">If you want to <span class="contact-emphasis">call:</span> </div>
+                    <div class="contact-right-r2">If you want to <span class="contact-emphasis">mail:</span> </div>
+                    <div class="contact-right-r3">If you want to <span class="contact-emphasis">meet:</span> </div>
+                </div>
+
+                <div class="contact-right-c2">
+                    <div class="contact-right-r1"><i class="fa-solid fa-phone" id="phone"></i></div>
+                    <div class="contact-right-r2"><i class="fa-solid fa-envelope" id="email"></i></div>
+                    <div class="contact-right-r3"><i class="fa-solid fa-location-dot" id="loc"></i></div>
+                </div>
+
+                <div class="contact-right-c3">
+                    <div class="contact-right-r1">385-299-8454</div>
+                    <div class="contact-right-r2">sarahchoe945@gmail.com</div>
+                    <div class="contact-right-r3">Probably at a coffeehouse somewhere in SLC, Utah</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="https://www.linkedin.com/in/sarah-choe-4974a723a/" target="_blank"><i class="fa-brands fa-linkedin-in" id="linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-github" id="github"></i></a>
+                <a href=""><i class="fa-brands fa-youtube" id="youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="footerBottom">
+            <p>Copyright &copy; 2023; Designed by Sarah Choe</p>
+        </div>
+    </footer>
+</body>
+</html>
